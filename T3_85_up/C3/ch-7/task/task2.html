@@ -1,0 +1,141 @@
+<!-- nav navbar task
+    1. write html srcipt using bootstrap to render a responsive navigation of links which shows and additional icon if width of device goes lessthen 992px(md) and navigation items should disappear
+    2. write html using bootstrap five to create navigation bar of two nav items in which navigation item should be displayed in tab form and user clicks on navigation item then content associated with that navigation link will be displayed.
+    3. write html code using bootstrap five to create a navbar in which one of the navigation item has dropdown menu. -->
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="link">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="navbar-brand">
+                            <img src="img.jpg" height="60px" width=60px class="rounded-pill" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Men</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">woman</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">kids</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#demo" data-bs-slide-to="0" class="active bg-warning"></button>
+            <button data-bs-target="#demo" data-bs-slide-to="1" class="bg-warning"></button>
+            <button data-bs-target="#demo" data-bs-slide-to="2" class="bg-warning"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" align="center">
+                <img src="img1.jpg" style="height: 25%; width: 60%;" alt="">
+            </div>
+            <div class="carousel-item" align="center">
+                <img src="img2.jpg" style="height: 25%; width: 60%;" alt="">
+            </div>
+            <div class="carousel-item" align="center">
+                <img src="img3.jpg" style="height: 25%; width: 60%;" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev " data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-success"></span>
+        </button>
+        <button class="carousel-control-next " data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-success"></span>
+        </button>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 ">
+            <img src="pro1.jpg" class="rounded-pill" height="100px" width="200px" alt="">
+            Product Name :- asdjfh
+            <br>
+            <button class="btn btn-warning">-</button>
+            <span class="btn btn-danger">Qty</span>
+            <button class="btn btn-warning">+</button>
+            <br>
+            <br>
+            <button class="btn btn-lg bg-info"> More details</button>
+        </div>
+        <div class="col-md-3 ">
+            <img src="pro2.jpg" height="100px" class="rounded-pill" width="200px" alt="">
+            Product Name :- asdjfh
+            <br>
+            <button class="btn btn-warning">-</button>
+            <span class="btn btn-danger">Qty</span>
+            <button class="btn btn-warning">+</button>
+            <br>
+            <br>
+            <button class="btn btn-lg bg-info"> More details</button>
+        </div>
+        <div class="col-md-3 ">
+            <img src="pro3.jpg" height="100px" width="200px" alt="">
+            Product Name :- asdjfh
+            <br>
+            <button class="btn btn-warning">-</button>
+            <span class="btn btn-danger">Qty</span>
+            <button class="btn btn-warning">+</button>
+            <br>
+            <br>
+            <button class="btn btn-lg bg-info"> More details</button>
+        </div>
+        <div class="col-md-3 ">
+            <img src="pro4.jpg" height="100px" width="200px" alt="">
+            Product Name :- asdjfh
+            <br>
+            <button class="btn btn-warning">-</button>
+            <span class="btn btn-danger">Qty</span>
+            <button class="btn btn-warning">+</button>
+            <br>
+            <br>
+            <button class="btn btn-lg bg-info"> More details</button>
+        </div>
+    </div>
+    <br>
+    <blockquote class="blockquote bg-dark">
+        <p class="text-light">Condition Apply</p>
+        <footer class="blockquote-footer text-right">ABC</footer>
+    </blockquote>
+</body>
+</html>
